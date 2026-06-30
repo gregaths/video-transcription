@@ -16,7 +16,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Build EXE with PyInstaller
-        run: pyinstaller --onefile --windowed --name Apomagnhtophonisi --icon microphone.ico --add-data policegreek.jpg;. main.py
+        run: pyinstaller --onefile --windowed --name="Apomagnhtophonisi" --icon="microphone.ico" --add-data="policegreek.jpg;." main.py
+        
       - name: Upload EXE as artifact
         uses: actions/upload-artifact@v4
         with:
