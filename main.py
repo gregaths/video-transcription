@@ -65,7 +65,7 @@ class MainWindow(QWidget):
         self.worker = None
 
         self.logo_label = QLabel()
-        logo_path = os.path.join(os.path.dirname(__file__), "/Users/grigoris/transcription/policegreek.jpg")
+        logo_path = os.path.join(os.path.dirname(__file__), "/Users/grigoris/transcriptionstopsadasfdas/policegreek.jpg")
         if os.path.exists(logo_path):
             pixmap = QPixmap(logo_path)
             # Scale με διατήρηση αναλογιών, μέγιστο πλάτος 200px
